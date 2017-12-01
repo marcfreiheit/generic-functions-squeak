@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testTravisItWorks
 
 	self assert: true

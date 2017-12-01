@@ -2,4 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"setUp" : "maf 12/1/2017 17:46",
+		"testGrammarExists" : "maf 12/1/2017 17:47",
+		"testGrammarParsesGenericFunctionKeywordMethodHeader" : "maf 12/1/2017 17:57",
+		"testGrammarParsesKeywordMessages" : "maf 12/1/2017 17:42",
+		"testGrammarParsesKeywordMethodHeaders" : "maf 12/1/2017 17:57",
 		"testTravisItWorks" : "maf 12/1/2017 11:35" } }

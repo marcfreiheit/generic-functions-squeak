@@ -2,6 +2,11 @@ as yet unclassified
 serializedGrammar
 ^ 'OhmGenericFunctionsSmalltalk <: OhmSmalltalk {
 
-firstRule = "start"
+BasicKeywordMethodHeaderSegment = keyword bindableIdentifier
 
-secondRule = "second"}'
+GenericFunctionKeywordMethodHeaderSegment = BasicKeywordMethodHeaderSegment identifier ~":"
+
+KeywordMethodHeader :=
+    KeywordMethodHeaderSegment+
+
+KeywordMethodHeaderSegment := GenericFunctionKeywordMethodHeaderSegment | BasicKeywordMethodHeaderSegment}'
