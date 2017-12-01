@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfGenericFunctions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfGenericFunctions",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
