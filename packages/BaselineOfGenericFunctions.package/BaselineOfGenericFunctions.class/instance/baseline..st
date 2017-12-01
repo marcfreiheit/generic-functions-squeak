@@ -8,8 +8,10 @@ baseline: spec
                 package: 'GenericFunctions-Core';
 		    package: 'GenericFunctions-Grammar';
                 package: 'GenericFunctions-Tests-Core' with: [ spec requires: #('default') ];
-		    package: 'GenericFunctions-Tests-Grammar' with: [ spec requires: #('grammar') ].
+		    package: 'GenericFunctions-Tests-Grammar' with: [ spec requires: #('grammar') ];
+		    yourself.
             spec
                 group: 'default' with: #('GenericFunctions-Core');
 		    group: 'grammar' with: #('GenericFunctions-Grammar');
-		    group: 'Tests' with: #('GenericFunctions-Tests-Core' 'GenericFunctions-Tests-Grammar') ]
+		    group: 'tests' with: #('GenericFunctions-Tests-Core' 'GenericFunctions-Tests-Grammar') ];
+	          yourself 
