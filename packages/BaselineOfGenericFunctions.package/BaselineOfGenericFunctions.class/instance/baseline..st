@@ -5,7 +5,8 @@ baseline: spec
         for: #common
         do: [ 
             spec
-                package: 'GenericFunctions';
+                package: 'GenericFunctions-Core';
+		    package: 'GenericFunctions-Grammar';
                 package: 'GenericFunctions-Tests' with: [ spec requires: #('default') ];
 		    package: 'GenericFunctions-Grammar-Tests' with: [ spec requires: #('grammar') ].
             spec
