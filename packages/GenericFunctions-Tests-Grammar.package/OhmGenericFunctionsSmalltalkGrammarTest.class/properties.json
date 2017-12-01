@@ -1,0 +1,14 @@
+{
+	"category" : "GenericFunctions-Tests-Grammar",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OhmGenericFunctionsSmalltalkGrammarTest",
+	"pools" : [
+		 ],
+	"super" : "OhmSyntaxTestCase",
+	"type" : "normal" }

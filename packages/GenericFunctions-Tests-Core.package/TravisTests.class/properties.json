@@ -1,0 +1,14 @@
+{
+	"category" : "GenericFunctions-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TravisTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
