@@ -8,9 +8,8 @@ SmalltalkCISpec {
     }
   ],
   #testing : {
-    #packages: [ 'GenericFunctions-Tests-*' ],
     #coverage : {
-      #packages : [ 'GenericFunctions-Core', 'GenericFunctions-Grammar' ]
+      #packages : [ 'GenericFunctions.*' ]
     }
   }
 }
