@@ -13,5 +13,6 @@ baseline: spec
             spec
                 group: 'default' with: #('GenericFunctions-Core');
 		    group: 'grammar' with: #('GenericFunctions-Grammar');
-		    group: 'tests' with: #('GenericFunctions-Tests-Core' 'GenericFunctions-Tests-Grammar') ];
-	          yourself 
+		    group: 'tests' with: #('GenericFunctions-Tests-Core' 'GenericFunctions-Tests-Grammar') 
+		    yourself 
+		]
