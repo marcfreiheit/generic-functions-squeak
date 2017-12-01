@@ -7,7 +7,7 @@ baseline: spec
 		spec baseline: 'Ohm' with: [
 			spec
 				repository: 'github://hpi-swa/ohm-s/packages';
-				loads: #('Core')
+				loads: #('Ohm-Core')
 		].
             spec
                 package: 'GenericFunctions-Core';
