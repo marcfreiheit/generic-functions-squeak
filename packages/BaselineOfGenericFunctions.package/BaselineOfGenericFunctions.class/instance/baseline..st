@@ -4,6 +4,11 @@ baseline: spec
     spec
         for: #common
         do: [ 
+		spec baseline: 'Ohm-Core' with: [
+			spec
+				repository: 'github://hpi-swa/ohm-s/packages';
+				loads: #('Core')
+		].
             spec
                 package: 'GenericFunctions-Core';
 		    package: 'GenericFunctions-Grammar';
