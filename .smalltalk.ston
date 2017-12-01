@@ -2,14 +2,14 @@ SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'GenericFunctions',
-      directory : 'packages',
+      #directory : 'packages',
       #platforms : [ #squeak ]
     }
   ],
   #testing : {
     #categories : [ 'GenericFunctions-*' ],
     #coverage : {
-      #packages : [ 'GenericFunctions.*' ]
+      #categories : [ 'GenericFunctions-*' ]
     }
   }
 }
