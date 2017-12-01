@@ -4,7 +4,7 @@ baseline: spec
     spec
         for: #common
         do: [ 
-		spec project: 'Ohm-Core' with: [
+		spec baseline: 'Ohm-Core' with: [
 			spec
 				repository: 'github://hpi-swa/ohm-s/packages';
 				loads: #('Core')
