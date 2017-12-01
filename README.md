@@ -1,4 +1,3 @@
-# generic-functions-squeak (https://travis-ci.org/marcfreiheit/generic-functions-squeak)
 An implementation of generic functions in Squeak/Smalltalk
 
 # Health
