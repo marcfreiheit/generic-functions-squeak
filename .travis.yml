@@ -1,0 +1,17 @@
+language: smalltalk
+sudo: false
+
+# Select operating system(s)
+os:
+  - linux
+  - osx
+
+# Select compatible Smalltalk image(s)
+smalltalk:
+# doesn't like me ):  - Squeak-trunk
+  - Squeak-5.1
+  - Squeak-5.0
+  - Squeak-4.6
+
+notifications:
+  email: false
