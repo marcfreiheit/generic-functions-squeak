@@ -1,12 +1,17 @@
 ; Class definitons, ported from our SWT project
+(defclass SWVector ()
+  (value :accessor vector-value
+         :initform '())
+  :autoinitargs #t)
+
 (defclass SWDate ()
   (value :accessor date-value
-         :initform '()
-         :initarg :value)
+         :type SWVector
+         :initform '())
   (next :accessor date-next
         :type SWDate
-        :initform '()
-        :initarg :next))
+        :initform '())
+  :autoinitargs #t)
 
 (defclass SWData ()
   (first :accessor data-first
@@ -14,25 +19,27 @@
          :initform '() 
          :initarg :first))
 
-(defclass SWVector ()
-  (value :accessor vector-value
-         :initform '()
-         :initarg :value))
-
 (defclass Point ()
   (x :accessor point-x
-     :initvalue 0
-     :initarg :x)
+     :type <number>
+     :initvalue 0)
   (y :accessor point-y
-     :initvalue 0
-     :initarg :y))
+     :type <number>
+     :initvalue 0)
+  :autoinitargs #t)
 
 ; naive first approach
 (defgeneric asSWDate (elem)) ; defining our generic function taking one argument
 
 (defmethod asSWDate ((elem Point))
-  '((point-x elem) (point-y elem)))
+  (make SWDate :value ))
 
+(defgeneric asSWVector (elem)) ; defininf our generic function taking one argument
 
+(defmethod asSWVector ((elem Point))
+  (make SWVector :value (cons (point-x elem) (cons (point-y elem) '()))))
+  
 ; easier approach
 
+; examples
+(vector-value (asSWVector (make Point :x 10)))
