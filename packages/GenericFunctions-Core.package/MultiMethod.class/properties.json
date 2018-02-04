@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"multiMethodSelector",
+		"genericMessageSelector" ],
 	"name" : "MultiMethod",
 	"pools" : [
 		 ],

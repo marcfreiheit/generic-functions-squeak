@@ -5,7 +5,10 @@
 		"host" : "maf 2/4/2018 15:32",
 		"host:" : "maf 2/4/2018 15:32",
 		"setUp" : "maf 2/4/2018 16:17",
-		"tearDown" : "maf 2/4/2018 16:18",
+		"tearDown" : "maf 2/4/2018 19:38",
 		"testAddDiscriminatingMethodImplicitly" : "maf 2/4/2018 16:18",
 		"testAddMultiMethodToMethodDict" : "maf 2/4/2018 15:50",
-		"testMethodSelectorsWithTypeAnnotation" : "maf 2/4/2018 15:40" } }
+		"testImplicitlyCreatesGenericMessage" : "maf 2/4/2018 19:41",
+		"testKnowsOwnSelectors" : "maf 2/4/2018 17:59",
+		"testMethodSelectorsWithTypeAnnotation" : "maf 2/4/2018 15:40",
+		"testStoresCompiledMethod" : "maf 2/4/2018 18:13" } }

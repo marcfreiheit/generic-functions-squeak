@@ -1,0 +1,4 @@
+as yet unclassified
+addDiscriminatingMethod: aDiscriminatingMethod
+
+	self discriminatingMethods add: aDiscriminatingMethod

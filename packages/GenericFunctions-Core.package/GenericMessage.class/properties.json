@@ -6,7 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"selector",
+		"multiMethods",
+		"methodCombination",
+		"discriminatingMethods" ],
 	"name" : "GenericMessage",
 	"pools" : [
 		 ],
