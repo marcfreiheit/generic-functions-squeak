@@ -1,0 +1,14 @@
+{
+	"category" : "GenericFunctions-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MultiMethod",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

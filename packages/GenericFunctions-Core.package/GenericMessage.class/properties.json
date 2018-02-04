@@ -1,0 +1,14 @@
+{
+	"category" : "GenericFunctions-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GenericMessage",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

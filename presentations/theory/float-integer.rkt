@@ -22,11 +22,11 @@
   (+ x (exact->inexact y)))
 
 
+; query generic function
 ; missing
 ; (add 5 5.4)
 ; (add 'a 'b)
-
-
+; change method during runtime
 
 
 ;(defmethod add (x y)
@@ -35,5 +35,5 @@
 ;(defmethod add ((x <exact-integer>) (y <inexact-rational>))
 ;  (+ x (inexact->exact (round y))))
 
-; (defmethod add ((x <exact-integer>) y)
+; (defmethod add (iar>) y)
 ;    (print '(Thats not working)))

@@ -1,0 +1,14 @@
+{
+	"category" : "GenericFunctions-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MethodCombination",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

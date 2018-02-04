@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "GenericFunctions",
+	"name" : "ClassSpecializer",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Specializer",
 	"type" : "normal" }

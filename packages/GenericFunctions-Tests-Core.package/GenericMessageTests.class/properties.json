@@ -1,0 +1,14 @@
+{
+	"category" : "GenericFunctions-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"host" ],
+	"name" : "GenericMessageTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
