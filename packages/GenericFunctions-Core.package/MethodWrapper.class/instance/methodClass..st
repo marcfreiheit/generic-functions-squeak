@@ -1,3 +1,2 @@
 imitating-method-protocol
-flushCache 
-	^ true
+methodClass: aClass

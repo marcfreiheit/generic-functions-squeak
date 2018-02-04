@@ -1,3 +1,3 @@
 imitating-method-protocol
-hasLiteralThorough: literal
+hasLiteralThorough: aLiteral
 	^ false

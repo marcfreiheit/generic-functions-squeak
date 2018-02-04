@@ -10,5 +10,5 @@
 	"name" : "MultiMethod",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "MethodWrapper",
 	"type" : "normal" }

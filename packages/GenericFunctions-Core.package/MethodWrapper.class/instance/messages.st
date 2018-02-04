@@ -1,3 +1,3 @@
 imitating-method-protocol
 messages
-	^ Array new
+	^ Array empty 

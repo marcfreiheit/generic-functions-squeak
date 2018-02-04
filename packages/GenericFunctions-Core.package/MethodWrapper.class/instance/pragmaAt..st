@@ -1,3 +1,3 @@
 imitating-method-protocol
-selector: aSymbol
-	^ true
+pragmaAt: aLiteral
+	^ nil

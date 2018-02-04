@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "DiscriminatingMethod",
+	"name" : "MethodWrapper",
 	"pools" : [
 		 ],
-	"super" : "MethodWrapper",
+	"super" : "Object",
 	"type" : "normal" }
