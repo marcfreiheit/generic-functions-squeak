@@ -4,6 +4,8 @@
 	"instance" : {
 		"host" : "maf 2/4/2018 15:32",
 		"host:" : "maf 2/4/2018 15:32",
-		"setUp" : "maf 2/4/2018 15:32",
+		"setUp" : "maf 2/4/2018 16:17",
+		"tearDown" : "maf 2/4/2018 16:18",
+		"testAddDiscriminatingMethodImplicitly" : "maf 2/4/2018 16:18",
 		"testAddMultiMethodToMethodDict" : "maf 2/4/2018 15:50",
 		"testMethodSelectorsWithTypeAnnotation" : "maf 2/4/2018 15:40" } }
