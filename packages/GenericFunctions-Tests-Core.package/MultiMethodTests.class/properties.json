@@ -8,7 +8,9 @@
 	"instvars" : [
 		"host",
 		"compiledMethod",
-		"sourceCode" ],
+		"sourceCode",
+		"sourceCode2",
+		"compiledMethod2" ],
 	"name" : "MultiMethodTests",
 	"pools" : [
 		 ],

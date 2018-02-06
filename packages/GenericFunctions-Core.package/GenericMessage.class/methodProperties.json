@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"uniqueInstance" : "maf 2/6/2018 13:30" },
 	"instance" : {
 		"add:" : "maf 2/4/2018 19:32",
 		"addDiscriminatingMethod:" : "maf 2/4/2018 19:32",

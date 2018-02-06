@@ -2,13 +2,13 @@
 addSelector: aSelector withMultiMethod: aMultiMethod
 	| genericMessage discriminatingMethod |
 	
-	((Smalltalk at: #GenericMessages) includesKey: aSelector withoutTypeAnnotation) 
+	((GenericMessage uniqueInstance) includesKey: aSelector withoutTypeAnnotation) 
 		ifTrue: [
-				genericMessage := (Smalltalk at: #GenericMessages) at: aSelector withoutTypeAnnotation
+				genericMessage := (GenericMessage uniqueInstance) at: aSelector withoutTypeAnnotation
 			]
 		 ifFalse: [
 				genericMessage := GenericMessage new selector: aSelector withoutTypeAnnotation; yourself.
-				(Smalltalk at: #GenericMessages) at: aSelector withoutTypeAnnotation put: genericMessage.
+				(GenericMessage uniqueInstance) at: aSelector withoutTypeAnnotation put: genericMessage.
 			].
 	
 	SystemChangeNotifier uniqueInstance doSilently: [
