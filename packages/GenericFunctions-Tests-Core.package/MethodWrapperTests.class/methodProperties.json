@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAsPartialMethod" : "maf 2/6/2018 10:37",
+		"testFlushCache" : "maf 2/6/2018 10:37",
+		"testHasLiteralThorough" : "maf 2/6/2018 10:37",
+		"testLiteral" : "maf 2/6/2018 10:36",
+		"testMessages" : "maf 2/6/2018 10:36",
+		"testMethodClass" : "maf 2/6/2018 10:37",
+		"testPragmaAt" : "maf 2/6/2018 10:38",
+		"testPragmas" : "maf 2/6/2018 10:38",
+		"testRunWithIn" : "maf 2/6/2018 10:39",
+		"testSelector" : "maf 2/6/2018 10:39",
+		"testSourceCode" : "maf 2/6/2018 10:40" } }

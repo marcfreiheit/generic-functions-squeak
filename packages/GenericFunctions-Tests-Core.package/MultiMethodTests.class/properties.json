@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"host" ],
+		"host",
+		"compiledMethod",
+		"sourceCode" ],
 	"name" : "MultiMethodTests",
 	"pools" : [
 		 ],

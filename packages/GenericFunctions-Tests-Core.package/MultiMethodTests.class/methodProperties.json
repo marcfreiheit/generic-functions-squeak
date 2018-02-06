@@ -2,13 +2,18 @@
 	"class" : {
 		 },
 	"instance" : {
+		"compiledMethod" : "maf 2/4/2018 21:31",
+		"compiledMethod:" : "maf 2/4/2018 21:31",
 		"host" : "maf 2/4/2018 15:32",
 		"host:" : "maf 2/4/2018 15:32",
-		"setUp" : "maf 2/4/2018 16:17",
+		"setUp" : "maf 2/4/2018 21:56",
+		"sourceCode" : "maf 2/4/2018 21:33",
+		"sourceCode:" : "maf 2/4/2018 21:33",
 		"tearDown" : "maf 2/4/2018 19:38",
 		"testAddDiscriminatingMethodImplicitly" : "maf 2/4/2018 16:18",
 		"testAddMultiMethodToMethodDict" : "maf 2/4/2018 15:50",
-		"testImplicitlyCreatesGenericMessage" : "maf 2/4/2018 19:41",
+		"testExtractSpecializers" : "maf 2/6/2018 13:03",
+		"testImplicitlyCreatesGenericMessage" : "maf 2/4/2018 19:57",
 		"testKnowsOwnSelectors" : "maf 2/4/2018 17:59",
 		"testMethodSelectorsWithTypeAnnotation" : "maf 2/4/2018 15:40",
-		"testStoresCompiledMethod" : "maf 2/4/2018 18:13" } }
+		"testStoresCompiledMethod" : "maf 2/6/2018 13:07" } }

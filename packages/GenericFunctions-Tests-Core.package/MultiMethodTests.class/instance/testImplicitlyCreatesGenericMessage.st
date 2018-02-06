@@ -4,7 +4,6 @@ testImplicitlyCreatesGenericMessage
 	| multiMethod selector gm |
 	selector := #'add:<SmallInteger>'.
 	multiMethod := MultiMethod new.
-	self halt.
 	self host class addSelector: selector withMultiMethod: multiMethod.
 	gm := (Smalltalk at: #GenericMessages) at: #'add:'.
 	

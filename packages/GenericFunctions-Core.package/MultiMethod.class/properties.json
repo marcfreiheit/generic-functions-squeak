@@ -7,7 +7,10 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"multiMethodSelector",
-		"genericMessageSelector" ],
+		"genericMessageSelector",
+		"compiledMethod",
+		"sourceCode",
+		"specializers" ],
 	"name" : "MultiMethod",
 	"pools" : [
 		 ],
