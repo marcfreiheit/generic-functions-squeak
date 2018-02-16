@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"buildMessageListWith:" : "maf 2/15/2018 16:03",
+		"compileMessage:notifying:" : "maf 2/16/2018 11:41",
+		"getChildren:" : "maf 2/16/2018 10:52",
+		"hasChildren:" : "maf 2/15/2018 16:01",
+		"messageIconAt:" : "maf 2/15/2018 13:44",
+		"removeMessage" : "maf 2/16/2018 11:38" } }

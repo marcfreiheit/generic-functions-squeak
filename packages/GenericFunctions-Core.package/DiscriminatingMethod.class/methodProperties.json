@@ -1,8 +1,25 @@
 {
 	"class" : {
-		 },
+		"for:" : "maf 2/16/2018 12:11" },
 	"instance" : {
 		"addToGenericMessage:" : "maf 2/4/2018 19:33",
+		"asSymbol" : "maf 2/15/2018 14:56",
+		"getSourceFor:in:" : "maf 2/15/2018 14:58",
+		"hasBreakpoint" : "maf 2/15/2018 14:58",
+		"hasReportableSlip" : "maf 2/15/2018 14:58",
+		"isQuick" : "maf 2/15/2018 15:04",
+		"last" : "maf 2/15/2018 14:59",
+		"literalsDo:" : "maf 2/15/2018 15:00",
+		"methodReference" : "maf 2/15/2018 15:01",
+		"primitive" : "maf 2/15/2018 15:01",
+		"putSource:fromParseNode:class:category:withStamp:inFile:priorMethod:" : "maf 2/15/2018 15:02",
+		"receiver" : "maf 2/16/2018 11:14",
+		"receiver:" : "maf 2/16/2018 11:14",
+		"removeFrom:" : "maf 2/16/2018 11:16",
+		"run:with:in:" : "maf 2/7/2018 13:38",
 		"selector" : "maf 2/4/2018 16:00",
 		"selector:" : "maf 2/4/2018 16:01",
-		"sourceCode" : "maf 2/4/2018 15:54" } }
+		"selectorWithReceiver" : "maf 2/16/2018 12:05",
+		"sourceCode" : "maf 2/4/2018 15:54",
+		"sourcePointer" : "maf 2/15/2018 15:02",
+		"timeStamp" : "maf 2/15/2018 15:08" } }

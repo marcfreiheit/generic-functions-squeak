@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"hasTypeAnnotation" : "maf 2/15/2018 15:52",
+		"removeFrom:" : "maf 2/16/2018 11:28",
 		"withoutTypeAnnotation" : "maf 2/4/2018 16:48" } }

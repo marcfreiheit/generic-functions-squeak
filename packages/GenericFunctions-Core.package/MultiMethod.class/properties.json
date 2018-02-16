@@ -10,9 +10,10 @@
 		"genericMessageSelector",
 		"compiledMethod",
 		"sourceCode",
-		"specializers" ],
+		"specializers",
+		"receiver" ],
 	"name" : "MultiMethod",
 	"pools" : [
 		 ],
-	"super" : "MethodWrapper",
+	"super" : "MethodAsObjectWrapper",
 	"type" : "normal" }

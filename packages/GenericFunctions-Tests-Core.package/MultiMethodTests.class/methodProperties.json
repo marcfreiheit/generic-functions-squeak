@@ -16,8 +16,10 @@
 		"tearDown" : "maf 2/4/2018 19:38",
 		"testAddDiscriminatingMethodImplicitly" : "maf 2/4/2018 16:18",
 		"testAddMultiMethodToMethodDict" : "maf 2/4/2018 15:50",
+		"testCreateFromCompiledMethod" : "maf 2/6/2018 13:54",
 		"testExtractSpecializers" : "maf 2/6/2018 13:03",
 		"testImplicitlyCreatesGenericMessage" : "maf 2/4/2018 19:57",
 		"testKnowsOwnSelectors" : "maf 2/4/2018 17:59",
 		"testMethodSelectorsWithTypeAnnotation" : "maf 2/4/2018 15:40",
-		"testStoresCompiledMethod" : "maf 2/6/2018 13:07" } }
+		"testStoresCompiledMethod" : "maf 2/6/2018 13:07",
+		"testStoresMoreComplexCompiledMethod" : "maf 2/6/2018 13:36" } }

@@ -1,0 +1,3 @@
+*GenericFunctions-Core
+isDiscriminatingMethod
+	^ false

@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selector" ],
+		"selector",
+		"receiver" ],
 	"name" : "DiscriminatingMethod",
 	"pools" : [
 		 ],
-	"super" : "MethodWrapper",
+	"super" : "MethodAsObjectWrapper",
 	"type" : "normal" }

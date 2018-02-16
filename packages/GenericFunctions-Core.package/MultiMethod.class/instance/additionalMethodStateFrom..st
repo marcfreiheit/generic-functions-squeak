@@ -1,3 +1,10 @@
 as yet unclassified
 additionalMethodStateFrom: aCompiledMethod
-	^ aCompiledMethod literals at: 1
+	aCompiledMethod literals do: [:literal |
+		literal class = AdditionalMethodState
+			ifTrue: [
+				^ literal
+				]
+		].
+	
+	self error: 'AdditionalMethodState missing. Cannot interpret pragmas'

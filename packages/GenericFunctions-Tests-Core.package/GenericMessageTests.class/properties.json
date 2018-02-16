@@ -6,7 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"host" ],
+		"host",
+		"sourceCode1",
+		"sourceCode2",
+		"compiledMethod1",
+		"compiledMethod2" ],
 	"name" : "GenericMessageTests",
 	"pools" : [
 		 ],

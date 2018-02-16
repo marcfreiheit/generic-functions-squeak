@@ -2,10 +2,20 @@
 	"class" : {
 		 },
 	"instance" : {
+		"compiledMethod1" : "maf 2/6/2018 13:45",
+		"compiledMethod1:" : "maf 2/6/2018 13:45",
+		"compiledMethod2" : "maf 2/6/2018 13:45",
+		"compiledMethod2:" : "maf 2/6/2018 13:45",
 		"host" : "maf 2/4/2018 13:55",
 		"host:" : "maf 2/4/2018 13:55",
-		"setUp" : "maf 2/4/2018 15:16",
+		"setUp" : "maf 2/6/2018 13:48",
+		"sourceCode1" : "maf 2/6/2018 13:45",
+		"sourceCode1:" : "maf 2/6/2018 13:45",
+		"sourceCode2" : "maf 2/6/2018 13:45",
+		"sourceCode2:" : "maf 2/6/2018 13:45",
+		"tearDown" : "maf 2/6/2018 13:51",
 		"testAddDiscriminatingMethod" : "maf 2/4/2018 19:35",
 		"testContainsMultipleMultiMethods" : "maf 2/4/2018 18:22",
+		"testDispatchBetweenTwoMultimethods" : "maf 2/6/2018 14:30",
 		"testMultiMethods" : "maf 2/4/2018 19:27",
 		"testUniqueInstance" : "maf 2/6/2018 13:28" } }

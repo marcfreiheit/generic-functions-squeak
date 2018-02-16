@@ -1,3 +1,12 @@
 accessing
 matchAgainst: aParameter
-	^ aParameter class = self specializerClassName or: (aParameter class inheritsFrom: self specializerClassName)
+
+	| matchingClass specializerClass |
+
+	aParameter isSymbol 
+		ifTrue: [ matchingClass := self classFor: aParameter ] 
+		ifFalse: [ matchingClass := aParameter class ].
+	
+	specializerClass := self classFor: self specializerClassName.
+	
+	^ matchingClass = specializerClass or: (matchingClass inheritsFrom: specializerClass)
