@@ -8,11 +8,46 @@ Make sure that you have [Metacello](https://github.com/dalehenrich/metacello-wor
 1. Clone this repo.
 1. Open your Monticello Browser inside your Squeak
 1. Add a _filetree_ repository to your package and select path: {repo_home}/packages
-1. Load both _GenericFunctions-Core_ and _GenericFunctions-Tools_ (Other packages aren't importing for running Generic Messages. They contain tests or courcs related stuff like a Gamada grammar)
+1. Load both _GenericFunctions-Core_, _GenericFunctions-Exceptions_ and _GenericFunctions-Tools_ (Other packages aren't important for running Generic Messages. They contain tests or courcs related stuff like a Gamada grammar)
 1. You're ready to go!
 
 ## Getting Started
 ### Hello Generic Message
+1. Create a new class
+```Smalltalk
+Object subclass: #DemoIntegerFive
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'GenericFunctions-Demo'
+```
+1. Add a _numericValue_ message to your demo integer
+```Smalltalk
+numericValue
+
+	^ 5
+```
+1. Add your first MultiMethod. We want to define the MultiMethod _#add:_ for a SmallInteger 
+```Smalltalk
+add: anInteger
+	<MultiMethod>
+	<parameter: #anInteger isKindOf: #SmallInteger>
+	^ self numericValue + anInteger
+```
+1. Then we define a MultiMethod wich handles an incoming float by converting it first
+```Smalltalk
+add: aFloat
+	<MultiMethod>
+	<parameter: #anInteger isKindOf: #Float>
+	^ self numericValue + aFloat asInteger
+```
+1. Let's try out! Open up a workspace and evaluate the following commands
+```Smalltalk
+DemoInteger new add: 10 "returns 15"
+DemoInteger new add: 12.4 "returns 17"
+DemoInteger new add: 'Do not work yet' "throws an error"
+```
+
 ### Tooling
 Generic Messages ship with their own 
 ### When to use Generic Messages
@@ -23,15 +58,17 @@ The following actions can be performed without taking the system into a non-cons
 * You can add MultiMethods by annotating them with `<MultiMethod>` pragma
 * You can change existing MultiMethods
 * You can specify parameters by providing a class symbol
-* You can delete MultiMethods. 
+* You can browse MultiMethods using the _GenericMessageBrowser_
+* You can delete MultiMethods
 * You can delete classes with MultiMethods
-* You can use your Squeak like before. My code does not make any changes to existing code.
+* You can use your Squeak like before. My code does not make any changes to existing code
 ### What you can't do
 The following actions can't be performed, because they are not implemented or take the system into a non-consistent state:
-* You can't file out classes with MultiMethods.
-* You can't use Generic Messages inside the default system browser. Please refer to the tooling section.
-* You can't change instance variables of a class already containing MultiMethods. Recompiling logic is currently missing.
-* MethodCombinations and Ranking during dispatch isn't implemented yet. Therefore, dispatch fails if multiple methods are applicable.
+* You can't file out classes with MultiMethods
+* You can't use Generic Messages inside the default system browser. Please refer to the tooling section
+* You can't change instance variables of a class already containing MultiMethods. Recompiling logic is currently missing
+* MethodCombinations and Ranking during dispatch isn't implemented yet. Therefore, dispatch fails if multiple methods are applicable
+* You can't specify the specializing parameter. Pragmas are mapped from the left to right parameters. In addition, you can't specify a MultiMethod without any specializer.
 
 ## Implementation
 ### How does the dispatch works? 
