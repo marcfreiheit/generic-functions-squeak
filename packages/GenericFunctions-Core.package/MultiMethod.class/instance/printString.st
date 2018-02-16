@@ -1,4 +1,4 @@
 as yet unclassified
 printString 
 
-	^ self multiMethodSelectorWithoutReceiver
+	^ self multiMethodSelectorWithoutReceiver asString 

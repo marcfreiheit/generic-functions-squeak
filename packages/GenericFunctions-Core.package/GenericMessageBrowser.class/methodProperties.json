@@ -2,9 +2,19 @@
 	"class" : {
 		 },
 	"instance" : {
-		"buildMessageListWith:" : "maf 2/15/2018 16:03",
+		"buildMessageListWith:" : "maf 2/16/2018 16:21",
 		"compileMessage:notifying:" : "maf 2/16/2018 11:41",
-		"getChildren:" : "maf 2/16/2018 10:52",
+		"currentMethod" : "maf 2/16/2018 15:57",
+		"currentMethod:" : "maf 2/16/2018 15:57",
+		"getChildren:" : "maf 2/16/2018 14:10",
+		"getSelectedMethod" : "maf 2/16/2018 16:03",
 		"hasChildren:" : "maf 2/15/2018 16:01",
+		"initialize" : "maf 2/16/2018 15:26",
+		"label:" : "maf 2/16/2018 15:10",
 		"messageIconAt:" : "maf 2/15/2018 13:44",
-		"removeMessage" : "maf 2/16/2018 11:38" } }
+		"methodList" : "maf 2/16/2018 15:43",
+		"removeClass" : "maf 2/16/2018 19:00",
+		"removeMessage" : "maf 2/16/2018 11:38",
+		"selectedMessageName:" : "maf 2/16/2018 15:49",
+		"update:" : "maf 2/16/2018 16:20",
+		"validateMessageSource:forSelector:inClass:" : "maf 2/16/2018 14:27" } }

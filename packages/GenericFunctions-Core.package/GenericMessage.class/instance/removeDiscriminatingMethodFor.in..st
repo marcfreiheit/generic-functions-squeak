@@ -1,4 +1,11 @@
 as yet unclassified
 removeDiscriminatingMethodFor: aSelector in: aClass
-
-	self discriminatingMethods removeKey: '<', aClass asString, '>', aSelector asString 
+	
+	| key |
+	
+	aClass isObsolete
+	 	ifTrue: [ key := '<', (aClass asString copyFrom: 'AnObsolete' size + 1 to: aClass asString size), '>', aSelector asString ]
+		ifFalse: [ key := '<', aClass asString, '>', aSelector asString ].
+		
+	self discriminatingMethods removeKey: key
+	

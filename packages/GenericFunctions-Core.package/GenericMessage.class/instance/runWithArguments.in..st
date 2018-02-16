@@ -1,5 +1,5 @@
 as yet unclassified
-runWithArguments: anArrayOfArguments
+runWithArguments: anArrayOfArguments in: aReceiver
 	
 	| applicableMethods |
 	
@@ -9,6 +9,6 @@ runWithArguments: anArrayOfArguments
 		ifTrue: [ NoSpecializedMethodFound signal: 'No applicable primary methods found.' ].
 	
 	applicableMethods keys size = 1
-		ifTrue: [ ^ applicableMethods values first valueWithReceiver: nil arguments: anArrayOfArguments ].
+		ifTrue: [ ^ applicableMethods values first valueWithReceiver: aReceiver arguments: anArrayOfArguments].
 	
 	NotImplemented signal: 'No ranking of multiple, applicable methods supported yet'

@@ -5,11 +5,13 @@ buildMessageListWith: builder
 	
 	treeSpec
 		model: self;
-		roots: #messageList;
+		roots: #methodList;
 		keyPress: #messageListKey:from:;
 		getChildren: #getChildren:; "hasChildren: #hasChildren:;"
 		setSelected: #selectMessageNamed:;
-		getSelected: #selectedMessageName;
+		getSelected: #getSelectedMethod;
+		getSelectedPath: #getSelectedMethod;
+		label: #label:;
 		menu: #messageListMenu:shifted:;
 		icon: #messageIconAt:;
 		autoDeselect: false.
