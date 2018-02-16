@@ -1,13 +1,44 @@
 # Generic Messages (Squeak/Smalltalk) ![Build Status](https://travis-ci.org/marcfreiheit/generic-functions-squeak.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/marcfreiheit/generic-functions-squeak/badge.svg?branch=master)](https://coveralls.io/github/marcfreiheit/generic-functions-squeak?branch=master)
 Generic Messages are an implementation of Generic Functions known from [CLOS](https://en.wikipedia.org/wiki/Common_Lisp_Object_System). They add support to dispatch a method on multiple parameters instead of a dispatch based on the receiver. 
+They were implemented during the seminar _Programming Languages - Implementation and Design_ at the chair @hpi-swa-teaching at the HPI, Potsdam, Germany.
+
+## Prerequisites
+Make sure that you have [Metacello](https://github.com/dalehenrich/metacello-work) installed. 
+## Setup
+1. Clone this repo.
+1. Open your Monticello Browser inside your Squeak
+1. Add a _filetree_ repository to your package and select path: {repo_home}/packages
+1. Load both _GenericFunctions-Core_ and _GenericFunctions-Tools_ (Other packages aren't importing for running Generic Messages. They contain tests or courcs related stuff like a Gamada grammar)
+1. You're ready to go!
 
 ## Getting Started
+### Hello Generic Message
 ### Tooling
+Generic Messages ship with their own 
 ### When to use Generic Messages
+
+## Scope
+### What you can do
+The following actions can be performed without taking the system into a non-consistent state:
+* You can add MultiMethods by annotating them with `<MultiMethod>` pragma
+* You can change existing MultiMethods
+* You can specify parameters by providing a class symbol
+* You can delete MultiMethods. 
+* You can delete classes with MultiMethods
+* You can use your Squeak like before. My code does not make any changes to existing code.
+### What you can't do
+The following actions can't be performed, because they are not implemented or take the system into a non-consistent state:
+* You can't file out classes with MultiMethods.
+* You can't use Generic Messages inside the default system browser. Please refer to the tooling section.
+* You can't change instance variables of a class already containing MultiMethods. Recompiling logic is currently missing.
+* MethodCombinations and Ranking during dispatch isn't implemented yet. Therefore, dispatch fails if multiple methods are applicable.
 
 ## Implementation
 ### How does the dispatch works? 
 ![Dispatch](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Generic%20Messages%20-%20Dispatch.png)
+### Testing
+Unfortunately, you can't rely on my testbed anymore. Due to side effects and a bad performing VM I stopped programming regarding the TDD paradigm. Some tests should work. On the other hand, some tests cause side effects because they to clean the method dicts and global Generic Message dict. 
+If you want to be safe, skip importing _GenericFunctions-Tests-*_
 
 ## Resources
 * Foote B., Johnson R.E., Noble J. (2005) Efficient Multimethods in a Single Dispatch Language. In: Black A.P. (eds) ECOOP 2005 - Object-Oriented Programming. ECOOP 2005. Lecture Notes in Computer Science, vol 3586. Springer, Berlin, Heidelberg
