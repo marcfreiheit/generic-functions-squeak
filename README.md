@@ -7,7 +7,7 @@ Generic Messages are an implementation of Generic Functions known from [CLOS](ht
 
 ## Implementation
 ### How does the dispatch works? 
-
+![Dispatch](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Generic%20Messages%20-%20Dispatch.png)
 
 ## Resources
 * Foote B., Johnson R.E., Noble J. (2005) Efficient Multimethods in a Single Dispatch Language. In: Black A.P. (eds) ECOOP 2005 - Object-Oriented Programming. ECOOP 2005. Lecture Notes in Computer Science, vol 3586. Springer, Berlin, Heidelberg
