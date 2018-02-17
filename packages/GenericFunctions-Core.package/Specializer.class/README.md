@@ -1,0 +1,1 @@
+I am a specializer of a MultiMethod. I store more detailed information about one parameter of method.

@@ -1,4 +1,4 @@
-as yet unclassified
+adding/removing
 removeDiscriminatingMethodsFor: aClass
 
 	self discriminatingMethods do: [:discriminatingMethod |

@@ -1,4 +1,4 @@
-as yet unclassified
+adding/removing
 removeMultiMethodsFor: aClass
 
 	(self multiMethodsFor: aClass) do: [:multiMethod | 

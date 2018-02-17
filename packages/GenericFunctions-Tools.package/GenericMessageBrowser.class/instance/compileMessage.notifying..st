@@ -1,4 +1,4 @@
-as yet unclassified
+code pane
 compileMessage: aText notifying: aController
 	
 	| compiledMethod multiMethod |

@@ -1,4 +1,4 @@
-as yet unclassified
+dispatch
 multiMethodsRankedFor: anArrayOfArguments
 
 	self multiMethods do: [ :multiMethod |

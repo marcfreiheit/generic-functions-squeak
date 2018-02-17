@@ -1,4 +1,4 @@
-as yet unclassified
+helper
 additionalMethodStateFrom: aCompiledMethod
 	aCompiledMethod literals do: [:literal |
 		literal class = AdditionalMethodState

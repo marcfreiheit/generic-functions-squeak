@@ -1,0 +1,1 @@
+I am a class specializer. My parameter has to be an instance of a given class.

@@ -1,4 +1,4 @@
-as yet unclassified
+adding/removing
 addToGenericMessage: aGenericMessage
 	
 	aGenericMessage addDiscriminatingMethod: self

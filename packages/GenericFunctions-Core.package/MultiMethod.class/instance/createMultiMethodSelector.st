@@ -1,14 +1,10 @@
-as yet unclassified
+initialzation
 createMultiMethodSelector
 	
 	| keywords result specializers |
-	"self assert: self specializers notNil."
-	"self assert: self genericMessageSelector notNil."
 	
 	keywords := self genericMessageSelector asString allRegexMatches: '[^:]+\:'.
 	specializers := self specializers sorted: [:a :b | a parameterOffset < b parameterOffset].
-	
-	"self assert: keywords size = (specializers size - 1)."
 	
 	result := '<', specializers first specializerClassName, '>'.
 	

@@ -1,4 +1,4 @@
-imitating-method-protocol
+initialzation
 createDiscriminatingMethod
 
 	| discriminatingMethod |

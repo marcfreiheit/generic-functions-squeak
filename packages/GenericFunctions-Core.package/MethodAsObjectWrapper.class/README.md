@@ -1,0 +1,1 @@
+I am a Wrapper of compiled methods. If you subclass me, you can imitate a compiled methods protocol. Doing that, you can install yourself into a method dictionary of a class.

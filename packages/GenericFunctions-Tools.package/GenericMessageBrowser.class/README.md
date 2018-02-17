@@ -1,0 +1,1 @@
+I am an extended system browser for Generic Messages. I provide tooling to create and remove Generic Messages, or more precise: To add and remove discriminating methods and multi methods. 

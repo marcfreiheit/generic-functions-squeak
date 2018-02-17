@@ -1,14 +1,14 @@
 {
-	"category" : "GenericFunctions-Core",
+	"category" : "GenericFunctions-Exceptions",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"currentMethod" ],
-	"name" : "GenericMessageBrowser",
+		 ],
+	"name" : "NoSpecializedMethodFound",
 	"pools" : [
 		 ],
-	"super" : "Browser",
+	"super" : "Error",
 	"type" : "normal" }

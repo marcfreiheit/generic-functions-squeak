@@ -1,4 +1,4 @@
-as yet unclassified
+dispatch
 runWithArguments: anArrayOfArguments in: aReceiver
 	
 	| applicableMethods |

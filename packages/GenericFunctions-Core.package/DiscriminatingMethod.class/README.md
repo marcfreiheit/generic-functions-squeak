@@ -1,0 +1,1 @@
+I imitate a compiled method. If the method should be called, i defer evaluation and pass arguments to my Generic Message instead.

@@ -1,0 +1,14 @@
+{
+	"category" : "GenericFunctions-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "maf 2/16/2018 20:21",
+	"instvars" : [
+		"currentMethod" ],
+	"name" : "GenericMessageBrowser",
+	"pools" : [
+		 ],
+	"super" : "Browser",
+	"type" : "normal" }

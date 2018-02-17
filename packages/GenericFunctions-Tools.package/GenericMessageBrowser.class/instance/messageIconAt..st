@@ -1,4 +1,4 @@
-as yet unclassified
+message list
 messageIconAt: aSymbol
 
 	self class showMessageIcons ifFalse: [ ^ nil ].

@@ -1,4 +1,4 @@
-imitating-method-protocol
+initialzation
 checkDiscriminatingMethod
 
 	(self receiver methodDict at: self genericMessageSelector ifAbsent: [ self createDiscriminatingMethod ])

@@ -1,4 +1,4 @@
-as yet unclassified
+toolbuilder
 buildMessageListWith: builder
 	| treeSpec |
 	treeSpec := builder pluggableTreeSpec new.

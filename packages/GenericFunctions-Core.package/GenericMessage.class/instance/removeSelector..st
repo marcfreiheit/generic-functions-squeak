@@ -1,4 +1,4 @@
-as yet unclassified
+adding/removing
 removeSelector: aSelector
 	
 	self multiMethods removeKey: aSelector

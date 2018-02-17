@@ -1,4 +1,4 @@
-as yet unclassified
+adding/removing
 removeDiscriminatingMethodFor: aSelector in: aClass
 	
 	| key |

@@ -1,4 +1,4 @@
-as yet unclassified
+message list
 getSelectedMethod
 	self methodList do: [ :method | 
 		method selector = self selectedMessageName

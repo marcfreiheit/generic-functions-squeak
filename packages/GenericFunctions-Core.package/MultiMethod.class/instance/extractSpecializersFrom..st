@@ -1,4 +1,4 @@
-as yet unclassified
+initialzation
 extractSpecializersFrom: aAdditionalMethodState
 	
 	| receiverSpecializer |

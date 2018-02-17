@@ -1,4 +1,4 @@
-as yet unclassified
+dispatch
 applicableFor: anArrayOfArguments
 	
 	anArrayOfArguments size < self specializers size ifTrue: [ ^ false ]. 

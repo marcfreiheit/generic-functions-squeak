@@ -1,0 +1,1 @@
+I am a Generic Message and I can dispatch a method on multiple parameters, including the receiver of a message and the arguments.

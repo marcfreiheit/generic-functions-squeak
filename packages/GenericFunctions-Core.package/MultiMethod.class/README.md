@@ -1,0 +1,1 @@
+I am a MultiMethod. I'm a wrapper of a compiled method and provide functionalty to check if my method is applicable for execution against a set of parameters.

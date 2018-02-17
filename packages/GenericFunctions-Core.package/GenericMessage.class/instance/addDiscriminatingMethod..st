@@ -1,3 +1,3 @@
-as yet unclassified
+adding/removing
 addDiscriminatingMethod: aDiscriminatingMethod
 	self discriminatingMethods at: aDiscriminatingMethod selectorWithReceiver put: aDiscriminatingMethod

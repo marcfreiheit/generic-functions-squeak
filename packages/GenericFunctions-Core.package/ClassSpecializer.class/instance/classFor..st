@@ -1,4 +1,4 @@
-as yet unclassified
+helper
 classFor: aSymbol
 
 	^ Smalltalk at: aSymbol asSymbol 

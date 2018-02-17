@@ -1,4 +1,4 @@
-as yet unclassified
+adding/removing
 remove: aSelector in: aClass
 
 	self removeDiscriminatingMethodFor: aSelector in: aClass.

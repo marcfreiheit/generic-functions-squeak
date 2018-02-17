@@ -1,0 +1,4 @@
+*GenericFunctions-Tools
+hasChildren 
+
+	^ false

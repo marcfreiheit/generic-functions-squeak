@@ -1,4 +1,4 @@
-imitating-method-protocol
+adding/removing
 addToGenericMessage: aGenericMessage
 
 	aGenericMessage addMultiMethod: self
