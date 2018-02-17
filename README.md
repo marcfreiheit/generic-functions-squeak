@@ -21,36 +21,56 @@ Object subclass: #DemoIntegerFive
 	poolDictionaries: ''
 	category: 'GenericFunctions-Demo'
 ```
-1. Add a _numericValue_ message to your demo integer
+2. Add a _numericValue_ message to your demo integer
 ```Smalltalk
 numericValue
 
 	^ 5
 ```
-1. Add your first MultiMethod. We want to define the MultiMethod _#add:_ for a SmallInteger 
+3. Add your first MultiMethod. We want to define the MultiMethod _#add:_ for a SmallInteger 
 ```Smalltalk
 add: anInteger
 	<MultiMethod>
 	<parameter: #anInteger isKindOf: #SmallInteger>
 	^ self numericValue + anInteger
 ```
-1. Then we define a MultiMethod wich handles an incoming float by converting it first
+4. Then we define a MultiMethod wich handles an incoming float by converting it first
 ```Smalltalk
 add: aFloat
 	<MultiMethod>
 	<parameter: #anInteger isKindOf: #Float>
 	^ self numericValue + aFloat asInteger
 ```
-1. Let's try out! Open up a workspace and evaluate the following commands
+5. Let's try out! Open up a workspace and evaluate the following commands
 ```Smalltalk
 DemoInteger new add: 10 "returns 15"
 DemoInteger new add: 12.4 "returns 17"
 DemoInteger new add: 'Do not work yet' "throws an error"
 ```
+6. Add another class called _DemoFloat_ and add the following MultiMethod
+```Smalltalk
+numericValue
+
+	^ 7.5
+```
+7. 
+```Smalltalk
+add: anInteger
+	<MultiMethod>
+	<parameter: #anInteger isKindOf: #SmallInteger>
+	
+	^ self numericValue + anInteger asFloat
+```
+8. That's it! You have implemented your first Generic Message with MultiMethods belonging to different classes. Feel free to explore the structure and inspect some elements like _DemoFloat_, _DemoInteger_, _GenericMessage uniqueInstance_, _(GenericMessage uniqueInstance) at: #add:_!
+![GenericMessage inspected](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Demo-GenericMessage.png)
+![GenericMassage Dictionary inspected](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Demo-Global-GenericMessages.png)
+![MethodDictionary of a class with MultiMethods inspected](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Demo-MethodDictionary.png)
+
 
 ### Tooling
-Generic Messages ship with their own 
-### When to use Generic Messages
+Generic Messages ship with their own system browser. Using that browser, called _GenericMessageBrowser_, you can browse, create and remove MultiMethods. You don't have to deal with creating GenericMessages or DiscriminatingMethods by hand.
+![GenericMessageBrowser](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Tooling-GenericMessageBrowser.png)
+This browser is mandatory to properly register and unregister Generic Messages and Discriminating Methods when creating MultiMethods. The default system browser doesn't have that functionality and will break your setup! 
 
 ## Scope
 ### What you can do
@@ -71,11 +91,13 @@ The following actions can't be performed, because they are not implemented or ta
 * You can't specify the specializing parameter. Pragmas are mapped from the left to right parameters. In addition, you can't specify a MultiMethod without any specializer.
 
 ## Implementation
+### How are MultiMethods, DiscriminatingMethods and Generic Messages are registered?
+![Structure](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Project%20Presentation%20-%20Generic%20Messages.png)
 ### How does the dispatch works? 
 ![Dispatch](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Generic%20Messages%20-%20Dispatch.png)
 ### Testing
 Unfortunately, you can't rely on my testbed anymore. Due to side effects and a bad performing VM I stopped programming regarding the TDD paradigm. Some tests should work. On the other hand, some tests cause side effects because they to clean the method dicts and global Generic Message dict. 
-If you want to be safe, skip importing _GenericFunctions-Tests-*_
+If you want to be safe, skip importing _GenericFunctions-Tests-*_.
 
 ## Resources
 * Foote B., Johnson R.E., Noble J. (2005) Efficient Multimethods in a Single Dispatch Language. In: Black A.P. (eds) ECOOP 2005 - Object-Oriented Programming. ECOOP 2005. Lecture Notes in Computer Science, vol 3586. Springer, Berlin, Heidelberg
