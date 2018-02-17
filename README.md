@@ -92,8 +92,14 @@ The following actions can't be performed, because they are not implemented or ta
 
 ## Implementation
 ### How are MultiMethods, DiscriminatingMethods and Generic Messages are registered?
+Generic Messages are saved in a global dictionary, more precise: Inside the _Smalltalk_ dictionary.
 ![Structure](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Project%20Presentation%20-%20Generic%20Messages.png)
+Both DiscriminatingMethods and MultiMethods are stored beside CompiledMethods inside the methodDict of a class. DiscriminatingMethods have a 'normal' selector without any type annotations. They _catch_ the message send of a receiver. MultiMethods have a selectior with type annotations. CompiledMethods aren't affected. 
+![Structure](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Project%20Presentation%20-%20Entrypoint_%20Discriminating%20Methods.png)
 ### How does the dispatch works? 
+A sender sends a message to a class which belongs to a Generic Message. The message send is caught by the DiscriminatingMethod. The DiscriminatingMethod is now responsible for passing the arguments and the receiver to the GenericMessage, which will perform the dispatch.
+The GenericMessage is checking against all of it's MultiMethods if they are applicable for this set of arguments. Applicable methods are ranked and most specific method gets invoked.
+Generic Messages can be called directly, too. Then, there is no need for a DiscriminatingMethod.
 ![Dispatch](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Generic%20Messages%20-%20Dispatch.png)
 ### Testing
 Unfortunately, you can't rely on my testbed anymore. Due to side effects and a bad performing VM I stopped programming regarding the TDD paradigm. Some tests should work. On the other hand, some tests cause side effects because they to clean the method dicts and global Generic Message dict. 
