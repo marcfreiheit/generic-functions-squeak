@@ -13,7 +13,8 @@ Make sure that you have [Metacello](https://github.com/dalehenrich/metacello-wor
 
 ## Getting Started
 ### Hello Generic Message
-1. Create a new class
+1. Open the GenericMessageBrowser by evaluating `GenericMessageBrowser open`
+2. Create a new class
 ```Smalltalk
 Object subclass: #DemoIntegerFive
 	instanceVariableNames: ''
@@ -21,39 +22,39 @@ Object subclass: #DemoIntegerFive
 	poolDictionaries: ''
 	category: 'GenericFunctions-Demo'
 ```
-2. Add a _numericValue_ message to your demo integer
+3. Add a _numericValue_ message to your demo integer
 ```Smalltalk
 numericValue
 
 	^ 5
 ```
-3. Add your first MultiMethod. We want to define the MultiMethod _#add:_ for a SmallInteger 
+4. Add your first MultiMethod. We want to define the MultiMethod _#add:_ for a SmallInteger 
 ```Smalltalk
 add: anInteger
 	<MultiMethod>
 	<parameter: #anInteger isKindOf: #SmallInteger>
 	^ self numericValue + anInteger
 ```
-4. Then we define a MultiMethod wich handles an incoming float by converting it first
+5. Then we define a MultiMethod wich handles an incoming float by converting it first
 ```Smalltalk
 add: aFloat
 	<MultiMethod>
 	<parameter: #anInteger isKindOf: #Float>
 	^ self numericValue + aFloat asInteger
 ```
-5. Let's try out! Open up a workspace and evaluate the following commands
+6. Let's try out! Open up a workspace and evaluate the following commands
 ```Smalltalk
 DemoInteger new add: 10 "returns 15"
 DemoInteger new add: 12.4 "returns 17"
 DemoInteger new add: 'Do not work yet' "throws an error"
 ```
-6. Add another class called _DemoFloat_ and add the following MultiMethod
+7. Add another class called _DemoFloat_ and add the following MultiMethod
 ```Smalltalk
 numericValue
 
 	^ 7.5
 ```
-7. 
+8. 
 ```Smalltalk
 add: anInteger
 	<MultiMethod>
@@ -61,7 +62,7 @@ add: anInteger
 	
 	^ self numericValue + anInteger asFloat
 ```
-8. That's it! You have implemented your first Generic Message with MultiMethods belonging to different classes. Feel free to explore the structure and inspect some elements like _DemoFloat_, _DemoInteger_, _GenericMessage uniqueInstance_, _(GenericMessage uniqueInstance) at: #add:_!
+9. That's it! You have implemented your first Generic Message with MultiMethods belonging to different classes. Feel free to explore the structure and inspect some elements like _DemoFloat_, _DemoInteger_, _GenericMessage uniqueInstance_, _(GenericMessage uniqueInstance) at: #add:_!
 ![GenericMessage inspected](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Demo-GenericMessage.png)
 ![GenericMassage Dictionary inspected](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Demo-Global-GenericMessages.png)
 ![MethodDictionary of a class with MultiMethods inspected](https://github.com/marcfreiheit/generic-functions-squeak/blob/master/resources/img/Demo-MethodDictionary.png)
