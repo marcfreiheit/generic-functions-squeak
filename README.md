@@ -8,7 +8,7 @@ Make sure that you have [Metacello](https://github.com/dalehenrich/metacello-wor
 1. Clone this repo.
 1. Open your Monticello Browser inside your Squeak
 1. Add a _filetree_ repository to your package and select path: {repo_home}/packages
-1. Load both _GenericFunctions-Core_, _GenericFunctions-Exceptions_ and _GenericFunctions-Tools_ (Other packages aren't important for running Generic Messages. They contain tests or courcs related stuff like a Gamada grammar)
+1. Load _GenericFunctions-Core_, _GenericFunctions-Exceptions_ and _GenericFunctions-Tools_ (Other packages aren't important for running Generic Messages. They contain tests or course related stuff like a Gamada grammar)
 1. You're ready to go!
 
 ## Getting Started
